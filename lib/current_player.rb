@@ -14,7 +14,7 @@ end
 def current_player(board)
   moves = turn_count(board)
   remainder = moves % 2
-  if remainder == 0 
+  if remainder.even?
     return "X"
   else
     return "O"
