@@ -7,6 +7,7 @@ def turn_count(board)
     else 
       turns = turns
     end
+  end
   return turns
 end
 end 
@@ -15,8 +16,8 @@ def current_player(board)
   moves = turn_count(board)
   remainder = moves % 2
   if remainder == 0
-    puts "X"
+    return "X"
   else
-    puts "O"
+    return "O"
   end
 end 
